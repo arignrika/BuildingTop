@@ -1,54 +1,37 @@
 {
   "name": "buildingtop",
   "version": "1.0.0",
-  "lockfileVersion": 2,
+  "description": "",
+  "main": "index.js",
+  "engines": {
+  "node": "18.x"
+  },
+  "scripts": {
+    "start": "npm run build && node index.js",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production --module-bind js=babel-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmqb/tower_game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmqb/tower_game/issues"
+  },
+  "homepage": "https://github.com/bmqb/tower_game#readme",
+"devDependencies": {
+  "@babel/core": "^7.0.0",
+  "@babel/preset-env": "^7.0.0",
+  "babel-loader": "^9.0.0",
+  "express": "^4.16.3",
+  "opn": "^5.3.0",
+  "webpack": "^5.0.0",
+  "webpack-cli": "^4.0.0" 
+},
+
+
   "dependencies": {
-    "@babel/core": {
-      "version": "7.0.0",
-      "resolved": "https://registry.npmjs.org/@babel/core/-/core-7.0.0.tgz",
-      "integrity": "sha512-...",
-      "dev": true
-    },
-    "@babel/preset-env": {
-      "version": "7.0.0",
-      "resolved": "https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.0.0.tgz",
-      "integrity": "sha512-...",
-      "dev": true
-    },
-    "babel-loader": {
-      "version": "9.0.0",
-      "resolved": "https://registry.npmjs.org/babel-loader/-/babel-loader-9.0.0.tgz",
-      "integrity": "sha512-...",
-      "dev": true
-    },
-    "express": {
-      "version": "4.16.3",
-      "resolved": "https://registry.npmjs.org/express/-/express-4.16.3.tgz",
-      "integrity": "sha512-...",
-      "dev": true
-    },
-    "opn": {
-      "version": "5.3.0",
-      "resolved": "https://registry.npmjs.org/opn/-/opn-5.3.0.tgz",
-      "integrity": "sha512-...",
-      "dev": true
-    },
-    "webpack": {
-      "version": "5.0.0",
-      "resolved": "https://registry.npmjs.org/webpack/-/webpack-5.0.0.tgz",
-      "integrity": "sha512-...",
-      "dev": true
-    },
-    "webpack-cli": {
-      "version": "4.0.0",
-      "resolved": "https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.0.0.tgz",
-      "integrity": "sha512-...",
-      "dev": true
-    },
-    "cooljs": {
-      "version": "1.0.2",
-      "resolved": "https://registry.npmjs.org/cooljs/-/cooljs-1.0.2.tgz",
-      "integrity": "sha512-..."
-    }
+    "cooljs": "^1.0.2"
   }
 }
