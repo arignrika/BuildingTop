@@ -2,8 +2,8 @@ const express = require('express')
 const path = require('path')
 const opn = require('opn')
 
-const server = express()
-const host = 'http://localhost:8082'
+const server = express();
+const port = process.env.PORT || 8082;
 server.use('/assets', express.static(path.resolve(__dirname, './assets')))
 server.use('/dist', express.static(path.resolve(__dirname, './dist')))
 
