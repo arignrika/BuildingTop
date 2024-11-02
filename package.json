@@ -1,8 +1,11 @@
 {
-  "name": "tower_game",
+  "name": "buildingtop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+  "node": "22.x"
+  },
   "scripts": {
     "start": "npm run build && node index.js",
     "build": "webpack --mode production --module-bind js=babel-loader"
@@ -26,6 +29,7 @@
     "webpack": "^4.0.1",
     "webpack-cli": "^3.1.1"
   },
+
   "dependencies": {
     "cooljs": "^1.0.2"
   }
