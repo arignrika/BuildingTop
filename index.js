@@ -1,6 +1,5 @@
 const express = require('express')
 const path = require('path')
-const opn = require('opn')
 
 const server = express();
 const port = process.env.PORT || 8082;
@@ -11,7 +10,6 @@ server.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, './index.html'));
 })
 
-server.listen(8082, () => {
-  console.log(`server started at ${host}`)
-  opn(host)
+server.listen(port, () => {
+  console.log(`server started at ${port}`)
 })
