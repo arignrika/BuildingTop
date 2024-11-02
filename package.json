@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "engines": {
-  "node": "18.x"
+  "node": "16.x"
   },
   "scripts": {
     "start": "npm run build && node index.js",
-    "build": "webpack --mode production --module-bind js=babel-loader"
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production --module-bind js=babel-loader"
   },
   "repository": {
     "type": "git",
